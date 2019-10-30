@@ -11,7 +11,7 @@ pipelineJob("$BUName/$ProductName/CICD_$AppName"){
             choiceType('SINGLE_SELECT')
             groovyScript{
                 script('["Select", "master", "develop", "feature"]')
-                fallbackScript('Fallback choice')
+                fallbackScript('"Fallback choice"')
             }
         }
     }

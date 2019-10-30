@@ -6,7 +6,7 @@ node("$NodeName"){
             url: "git@github.com:jayabalandevsecops/aragroovy.git",
             branch: "master"
         )
-        dir('Config'){
+        dir('config'){
             git(
                 url: "git@github.com:jayabalandevsecops/aragroovyconf.git",
                 branch: "master"

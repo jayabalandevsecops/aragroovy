@@ -24,4 +24,10 @@ node("$NodeName"){
         load('app/build.groovy')
         println("Build the App..!")
     }
+    stage("Deploy"){
+        println("Deploying the app...")
+        sh "chmod u+x scripts/dep.sh"
+        sh "scripts/dep.sh"
+        println("Deployed the app..!")
+    }
 }

@@ -4,7 +4,7 @@ pipelineJob("$BUName/$ProductName/CICD_$AppName"){
     parameters{
         stringParam("AppRepo", "$ApplicationRepo", "GIT URL - App Repo")
         stringParam("AppName", "$AppName", "App Nane")
-        stringParam("TestRunTool", "$UniTestRun", "")
+        stringParam("UnitTestTool", "$UnitTestRun", "")
         stringParam("NodeName", "$NodeName", "")
         activeChoiceParam('Branch'){
             description('Branch to be build')

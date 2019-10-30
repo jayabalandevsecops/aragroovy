@@ -17,7 +17,7 @@ pipelineJob("$BUName/$ProductName/CICD_$AppName"){
     }
     definition{
         cps{
-            def jobScript = new readFileFromWorkspace('cit.groovy')
+            def jobScript = readFileFromWorkspace('cit.groovy')
             script(jobScript)
             def approvals = org.jenkinsci.plugins.sciptsecurity.scripts.ScriptApprovals.get()
             approvals.approveScript(approvals.hash(jobScript, "groovy"))

@@ -1,5 +1,5 @@
 folder("$BUName"){}
-folder("$ProductName"){}
+folder("$BUName/$ProductName"){}
 pipelineJob("$BUName/$ProductName/CICD_$AppName"){
-    
+
 }
